@@ -1,0 +1,16 @@
+<hr>
+
+<div class="row">
+  <div class="col">
+
+    <!-- TODO onDeleteCharacter() -->
+
+    <dbz-list [characterList]="characters"
+              (onDeleteId)="onDeleteCharacter($event)"></dbz-list>
+  </div>
+
+  <div class="col">
+    <!-- {{characters}} -->
+    <dbz-add-character  (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+</div>
